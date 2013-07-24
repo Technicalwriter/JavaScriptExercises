@@ -1,23 +1,25 @@
 /**
- * Randomizes three numbers in range (0.. 100) and prints the largest one.
+ * Section 1 -- Basic Syntax
+ * Question: 1) Randomizes three numbers in range (0.. 100) and prints the largest one.
  */
+<!DOCTYPE html>
 <html>
-<head>
-</head>
 <body>
 
 <script type="text/javascript">
-for (x=0,x<3;x++) {
-  Math,random() * (100 - 0) => r
-  if r>R 
-  break;
-}
 
-document.write(r);
+var x = (Math.random() * (100 - 0));
+var y = (Math.random() * (100 - 0));
+var z = (Math.random() * (100 - 0));
+
+var max =Math.max(x,y,z)
+
+document.write(max)
 
 </script>
+
 </body>
-</html>
+</html> 
 
 
 /**
