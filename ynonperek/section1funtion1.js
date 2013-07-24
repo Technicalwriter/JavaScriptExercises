@@ -12,7 +12,7 @@ var x = (Math.random() * (100 - 0));
 var y = (Math.random() * (100 - 0));
 var z = (Math.random() * (100 - 0));
 
-var max =Math.max(x,y,z)
+var max = Math.max(x,y,z)
 
 document.write(max)
 
@@ -33,11 +33,8 @@ document.write(max)
  * if y>z than y=>z
  * print z
  * 
- * var x
- * var y
- * var z
  * 
- * x = Math.random() * (100 - 0)
  * 
- * document.write(z);
+ * 
+ * 
  */
