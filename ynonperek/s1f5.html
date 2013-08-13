@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!-- //Randomizes a number n in range 0..100. 
+>Now randomizes n more numbers in that range, 
+>printing the largest of them.;
+-->
+
+<body>
+
+<script type="text/javascript">
+
+var n = (Math.random() * (100 - 0));
+var max = n
+var count = 0
+var x = 0
+var y = 0
+while ( count <= max && n > 0){
+  var x = (Math.random() * (100 - 0));
+  if (x>=y)
+  {
+  y=x;
+  }
+  count++;
+}
+
+document.write(y);
+
+
+
+</script>
+
+</body>
+</html>
