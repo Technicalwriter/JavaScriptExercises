@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!-- //Randomizes a number (range 0..100), then prints all the odd numbers from 40 to that one. 
+<If the number was smaller than 40, print all the numbers down to the randomized one 
+<(i.e. if the result was 37, you should print: 40, 39, 38, 37);
+-->
+
+<body>
+
+<script type="text/javascript">
+
+var R = (Math.random() * (100 - 0));
+var count = 41;
+while (R >= count ){
+  document.write(count + "<br />");
+  count+=2;
+}
+while (R <= count ){
+  document.write(count + "<br />");
+  count--;
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+<!-- //My notes.;
+-->
