@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!-- //Randomizes two numbers and prints their least common multiplication of them. 
+< (use http://en.wikipedia.org/wiki/Least_common_multiple for details).;
+-->
+
+<body>
+
+<script type="text/javascript">hjg
+
+var x = Math.floor((Math.random() * (100)));
+var y = Math.floor((Math.random() * (100))); 
+document.write(x + "<br />");
+document.write(y + "<br />"); 
+
+function factors(num)
+{
+ var
+  n_factors = [],
+  i;
+ 
+ for (i = 1; i <= Math.floor(Math.sqrt(num)); i += 1)
+  if (num % i === 0)
+  {
+   n_factors.push(i);
+   if (num / i !== i)
+    n_factors.push(num / i);
+  }
+ n_factors.sort(function(a, b){return a - b;});  // numeric sort
+ return n_factors;
+}
+
+
+document.write(factors(x)[1] + "<br />");
+document.write(factors(y)[1] + "<br />");
+
+<!-- //if factors(x)=factors(y){document.write(factors(x))}
+< else {document.write("no common factor");
+
+
+}
+-->
+</script>
+
+</body>
+</html>
