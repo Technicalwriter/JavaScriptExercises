@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!-- //Section 2 - Objects and Arrays
+< Fill in the blanks to make the program work:;
+-->
+
+<body>
+
+<script type="text/javascript">
+
+(function () {
+  // write your code here to make the program work 
+document.write("start function");
+  var s1 = Summer();
+  var s2 = Summer();
+ 
+  s1.add(10);
+  s1.add(20);
+ 
+  s2.add(30);
+ 
+  s2.add(5);
+ 
+  // prints 30
+  console.log(s1.getCurrentSum());
+ 
+  // prints 35
+  console.log(s2.getCurrentSum());
+ 
+}());
+
+Summer(1);
+</script>
+
+</body>
+</html>
+
+<!-- //Is this a math program?;
+-->
