@@ -16,6 +16,19 @@ var d = Math.floor(n/1-((a*1000)+(b*100)+(c*10)));
 
 document.write(a+b+c+d);
 
+var x = 1000+(Math.random() * (9999 - 1000)); 
+
+var remainder = 0;
+//TODO: use i as loop invariant
+//http://en.wikipedia.org/wiki/Modulo_operation
+for (var loopCount = 0; loopCount < 4;loopCount++){
+  //TODO: Change N
+  remainder += n % 10;
+}
+
+document.write(remainder);
+
+
 
 </script>
 

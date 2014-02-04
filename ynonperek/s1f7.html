@@ -15,11 +15,15 @@ var c = Math.floor(n/10-((a*100)+b*10));
 var d = Math.floor(n/1-((a*1000)+(b*100)+(c*10)));
 
 var x = (a+b+c+d);
+// Number 6 solution might help. Instead of the loop invariant being 4 it would be 3. 
+
+//Declare variables outside the loop
+var x,y,z; // Not sure if this can be done in javascript. 
 
 while (x>=10){
-var y = Math.floor(x/10);
-var z = Math.floor(x/1) - (y*10);
-var x = y+z;
+  y = Math.floor(x/10);
+  z = Math.floor(x/1) - (y*10);
+  x = y+z;
 }
 
 document.write(x);
